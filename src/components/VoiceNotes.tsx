@@ -37,7 +37,7 @@ export const VoiceNotePlayer: React.FC<VoiceNotePlayerProps> = ({ voiceNote, onD
           {isPlaying ? <Pause size={20} /> : <Play size={20} className="ml-1" />}
         </button>
         <div>
-          <p className="text-sm font-medium text-[var(--text-primary)]">Voice Note {voiceNote.slotNumber}</p>
+          <p className="text-sm font-medium text-[var(--text-primary)]">Voice Note XX {voiceNote.slotNumber}</p>
           <p className="text-xs text-amber-700 dark:text-amber-400">{Math.floor(voiceNote.duration / 60)}:{(voiceNote.duration % 60).toString().padStart(2, '0')}</p>
         </div>
       </div>
